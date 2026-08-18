@@ -193,12 +193,12 @@ export default function App() {
       <div className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-blue-700/15 blur-[120px] pointer-events-none" />
 
       {/* Persistent Top SBI Logo Header for Every Page */}
-      <header className="relative z-20 w-full pt-2 sm:pt-3 pb-1 flex items-center justify-center shrink-0">
-        <div className="bg-white/95 backdrop-blur-sm px-4 sm:px-5 py-1.5 rounded-xl sm:rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.12)] border border-cyan-400/30 flex items-center justify-center">
+      <header className="relative z-20 w-full pt-3 sm:pt-4 pb-1.5 flex items-center justify-center shrink-0">
+        <div className="bg-white/95 backdrop-blur-sm px-6 sm:px-8 py-2 sm:py-3 rounded-2xl sm:rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.2)] border border-cyan-400/40 flex items-center justify-center hover:scale-105 transition-transform duration-300">
           <img
-            src="/sbi-life.svg"
+            src="/sbi-life.png"
             alt="SBI Life"
-            className="h-6 sm:h-7 md:h-8 w-auto object-contain"
+            className="h-11 sm:h-14 md:h-16 w-auto object-contain"
           />
         </div>
       </header>
