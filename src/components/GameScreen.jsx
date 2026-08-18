@@ -12,7 +12,7 @@ export default function GameScreen({
   timeLeft
 }) {
   return (
-    <div className="w-full h-screen max-h-screen overflow-hidden flex flex-col justify-between px-2 sm:px-4 py-2 select-none">
+    <div className="w-full h-full flex-1 overflow-hidden flex flex-col justify-between px-2 sm:px-4 pb-1 select-none">
       {/* Game status and controls header */}
       <GameHeader
         timeLeft={timeLeft}

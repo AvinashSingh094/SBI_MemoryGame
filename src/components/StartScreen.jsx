@@ -3,7 +3,7 @@ import { Play } from 'lucide-react';
 
 export default function StartScreen({ onStartGame }) {
   return (
-    <div className="w-full h-screen max-h-screen flex items-center justify-center p-4">
+    <div className="w-full h-full flex items-center justify-center p-4">
       {/* Start Button CTA */}
       <button
         onClick={onStartGame}

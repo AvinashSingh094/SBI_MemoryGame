@@ -192,8 +192,19 @@ export default function App() {
       <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-cyan-600/15 blur-[120px] pointer-events-none" />
       <div className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-blue-700/15 blur-[120px] pointer-events-none" />
 
+      {/* Persistent Top SBI Logo Header for Every Page */}
+      <header className="relative z-20 w-full pt-2 sm:pt-3 pb-1 flex items-center justify-center shrink-0">
+        <div className="bg-white/95 backdrop-blur-sm px-4 sm:px-5 py-1.5 rounded-xl sm:rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.12)] border border-cyan-400/30 flex items-center justify-center">
+          <img
+            src="/sbi-life.svg"
+            alt="SBI Life"
+            className="h-6 sm:h-7 md:h-8 w-auto object-contain"
+          />
+        </div>
+      </header>
+
       {/* Main Screen Router */}
-      <div className="relative z-10 w-full h-full flex flex-col justify-center overflow-hidden">
+      <div className="relative z-10 w-full flex-1 flex flex-col justify-center overflow-hidden">
         {gameState === 'start' && (
           <StartScreen onStartGame={startGame} />
         )}
