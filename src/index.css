@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background: radial-gradient(circle at 50% 10%, #0d2857 0%, #08142c 60%, #040915 100%);
+    min-height: 100vh;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* 3D Card Flip Mechanics */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(15, 33, 68, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.glass-card {
+  background: rgba(11, 32, 70, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(34, 211, 238, 0.6);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.35);
+}
+
+/* Metallic gradient border */
+.metallic-border {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.8), rgba(34, 211, 238, 0.8), rgba(30, 111, 217, 0.8));
+}
+
+/* Custom glow text */
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+}
+
+/* Pulse alert for timer */
+@keyframes urgentPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(239, 68, 68, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+  }
+}
+
+.urgent-timer {
+  animation: urgentPulse 0.8s infinite ease-in-out;
+}
